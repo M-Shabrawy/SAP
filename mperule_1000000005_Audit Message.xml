@@ -1,0 +1,2566 @@
+<?xml version="1.0" standalone="yes"?>
+<RuleDataset>
+  <ExportInfo>
+    <ExportConsoleVersion>7.3.3.0</ExportConsoleVersion>
+    <KBVersion>7.1.437.1</KBVersion>
+    <DateExported>2018-04-12T17:36:33.0124356+03:00</DateExported>
+    <ExportLicense>1544946</ExportLicense>
+    <ExportUser>LogRhythmAdmin</ExportUser>
+  </ExportInfo>
+  <MPERule>
+    <MPERuleID>1000000013</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1019753</CommonEventID>
+    <CommonEventName>General Audit Message</CommonEventName>
+    <MsgClassID>1999</MsgClassID>
+    <Name>Audit Message</Name>
+    <FullName>Audit Message</FullName>
+    <BaseRule>1</BaseRule>
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.18+03:00</DateUpdated>
+    <SortOrder>1</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <DefLogMartMode>13627390</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000014</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1019753</CommonEventID>
+    <CommonEventName>General Audit Message</CommonEventName>
+    <MsgClassID>1999</MsgClassID>
+    <Name>AU0 - Other Events - Audit Test</Name>
+    <FullName>AU0 - Other Events - Audit Test</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AU0,Other Events,Audit Test,Non-Critical,Low</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.18+03:00</DateUpdated>
+    <SortOrder>1</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AU0</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627390</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000015</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1030645</CommonEventID>
+    <CommonEventName>User Logon</CommonEventName>
+    <MsgClassID>1020</MsgClassID>
+    <Name>AU1 - Dialog Logon - Logon Successful</Name>
+    <FullName>AU1 - Dialog Logon - Logon Successful</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AU1,Dialog Logon,Logon Successful,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.18+03:00</DateUpdated>
+    <SortOrder>2</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AU1</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000016</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1032132</CommonEventID>
+    <CommonEventName>User Logon Failure</CommonEventName>
+    <MsgClassID>1040</MsgClassID>
+    <Name>AU2 - Dialog Logon - Logon Failed</Name>
+    <FullName>AU2 - Dialog Logon - Logon Failed</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.183+03:00</DateUpdated>
+    <SortOrder>3</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AU2</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000017</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1029199</CommonEventID>
+    <CommonEventName>Transaction Request Started</CommonEventName>
+    <MsgClassID>3400</MsgClassID>
+    <Name>AU3 - Transaction Start - Transaction Started</Name>
+    <FullName>AU3 - Transaction Start - Transaction Started</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AU2,Dialog Logon,Logon Failed,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.183+03:00</DateUpdated>
+    <SortOrder>4</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AU3</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000018</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1000000003</CommonEventID>
+    <CommonEventName>Start of Transaction Failed</CommonEventName>
+    <MsgClassID>3200</MsgClassID>
+    <Name>AU4 -Transaction - Start of transaction failed</Name>
+    <FullName>AU4 -Transaction - Start of transaction failed</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AU4,Transaction Start,Start of transaction failed,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>9</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.183+03:00</DateUpdated>
+    <SortOrder>5</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AU4</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000019</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1030645</CommonEventID>
+    <CommonEventName>User Logon</CommonEventName>
+    <MsgClassID>1020</MsgClassID>
+    <Name>AU5 - RFC/CPIC Logon - RFC/CPIC Logon Successful</Name>
+    <FullName>AU5 - RFC/CPIC Logon - RFC/CPIC Logon Successful</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AU5,RFC/CPIC Logon,RFC/CPIC Logon Successful,Non-Critical,Low</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.183+03:00</DateUpdated>
+    <SortOrder>6</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AU5</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000020</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1032132</CommonEventID>
+    <CommonEventName>User Logon Failure</CommonEventName>
+    <MsgClassID>1040</MsgClassID>
+    <Name>AU6 - RFC/CPIC Logon - RFC/CPIC Logon Failed</Name>
+    <FullName>AU6 - RFC/CPIC Logon - RFC/CPIC Logon Failed</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AU6,RFC/CPIC Logon,RFC/CPIC Logon Failed,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.187+03:00</DateUpdated>
+    <SortOrder>7</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AU6</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000021</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>2435</CommonEventID>
+    <CommonEventName>User Account Created</CommonEventName>
+    <MsgClassID>1100</MsgClassID>
+    <Name>AU7 - User Master Change - User Created</Name>
+    <FullName>AU7 - User Master Change - User Created</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AU7,User Master Change,User Created,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>3</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.187+03:00</DateUpdated>
+    <SortOrder>8</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AU7</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000022</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>2434</CommonEventID>
+    <CommonEventName>User Account Deleted</CommonEventName>
+    <MsgClassID>1120</MsgClassID>
+    <Name>AU8 - User Master Change - User Deleted</Name>
+    <FullName>AU8 - User Master Change - User Deleted</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AU8,User Master Change,User Deleted,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.187+03:00</DateUpdated>
+    <SortOrder>9</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AU8</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000023</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>2460</CommonEventID>
+    <CommonEventName>Account Locked</CommonEventName>
+    <MsgClassID>1220</MsgClassID>
+    <Name>AU9 - User Master Change - User Locked</Name>
+    <FullName>AU9 - User Master Change - User Locked</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AU9,User Master Change,User Locked,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.187+03:00</DateUpdated>
+    <SortOrder>10</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AU9</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000024</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>14503</CommonEventID>
+    <CommonEventName>Account Unlocked</CommonEventName>
+    <MsgClassID>1200</MsgClassID>
+    <Name>AUA - User Master Change - User Unlocked</Name>
+    <FullName>AUA - User Master Change - User Unlocked</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUA,User Master Change,User Unlocked,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>3</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.19+03:00</DateUpdated>
+    <SortOrder>11</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUA</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000025</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>22000</CommonEventID>
+    <CommonEventName>Role Attribute Modified</CommonEventName>
+    <MsgClassID>1160</MsgClassID>
+    <Name>AUB:User Master Change:User Authorizations Changed</Name>
+    <FullName>AUB:User Master Change:User Authorizations Changed</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUB,User Master Change,Authorizations for User Changed,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>1</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.19+03:00</DateUpdated>
+    <SortOrder>12</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUB</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000026</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1030646</CommonEventID>
+    <CommonEventName>User Logoff</CommonEventName>
+    <MsgClassID>1020</MsgClassID>
+    <Name>AUC - Dialog Logon - User Logoff</Name>
+    <FullName>AUC - Dialog Logon - User Logoff</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUC,Dialog Logon,User Logoff,Non-Critical,Low</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.19+03:00</DateUpdated>
+    <SortOrder>13</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUC</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000027</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>2436</CommonEventID>
+    <CommonEventName>User Account Attribute Modified</CommonEventName>
+    <MsgClassID>1160</MsgClassID>
+    <Name>AUD:User Master Change:User Master Record Changed</Name>
+    <FullName>AUD:User Master Change:User Master Record Changed</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUD,User Master Change,User Master Record Changed,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>1</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.19+03:00</DateUpdated>
+    <SortOrder>14</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUD</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000028</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1034134</CommonEventID>
+    <CommonEventName>Policy Modified : Auditing</CommonEventName>
+    <MsgClassID>1500</MsgClassID>
+    <Name>AUE - System - Audit Configuration Changed</Name>
+    <FullName>AUE - System - Audit Configuration Changed</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUE,System,Audit Configuration Changed,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>2</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.19+03:00</DateUpdated>
+    <SortOrder>15</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUE</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000029</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1034134</CommonEventID>
+    <CommonEventName>Policy Modified : Auditing</CommonEventName>
+    <MsgClassID>1500</MsgClassID>
+    <Name>AUF-System-Audit: Slot Class Severity User Client</Name>
+    <FullName>AUF-System-Audit: Slot Class Severity User Client</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUF,System,Audit: Slot Class Severity User Client,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>2</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.193+03:00</DateUpdated>
+    <SortOrder>16</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUF</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000030</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>10404</CommonEventID>
+    <CommonEventName>Process/Service Started</CommonEventName>
+    <MsgClassID>1400</MsgClassID>
+    <Name>AUG - System - Application Server Started</Name>
+    <FullName>AUG - System - Application Server Started</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUG,System,Application Server Started,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.193+03:00</DateUpdated>
+    <SortOrder>17</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUG</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000031</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>14889</CommonEventID>
+    <CommonEventName>Process/Service Stopped</CommonEventName>
+    <MsgClassID>1400</MsgClassID>
+    <Name>AUH - System - Application Server Stopped</Name>
+    <FullName>AUH - System - Application Server Stopped</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUH,System,Application Server Stopped,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.193+03:00</DateUpdated>
+    <SortOrder>18</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUH</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000032</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1034975</CommonEventID>
+    <CommonEventName>Interface Inactive</CommonEventName>
+    <MsgClassID>3300</MsgClassID>
+    <Name>AUI - System - Audit: Slot Inactive</Name>
+    <FullName>AUI - System - Audit: Slot Inactive</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUI,System,Audit: Slot Inactive,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>5</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.197+03:00</DateUpdated>
+    <SortOrder>19</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUI</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000033</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>20871</CommonEventID>
+    <CommonEventName>Set Client Active</CommonEventName>
+    <MsgClassID>3400</MsgClassID>
+    <Name>AUJ - System - Audit: Active Status Set</Name>
+    <FullName>AUJ - System - Audit: Active Status Set</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUJ,System,Audit: Active Status Set,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.197+03:00</DateUpdated>
+    <SortOrder>20</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUJ</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000034</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1028208</CommonEventID>
+    <CommonEventName>Function Call Completed</CommonEventName>
+    <MsgClassID>1140</MsgClassID>
+    <Name>AUK - RFC Function Call - Successful RFC Call</Name>
+    <FullName>AUK - RFC Function Call - Successful RFC Call</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUK,RFC Function Call,Successful RFC Call,Non-Critical,Low</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.197+03:00</DateUpdated>
+    <SortOrder>21</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUK</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000035</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>14892</CommonEventID>
+    <CommonEventName>Function Call Failed</CommonEventName>
+    <MsgClassID>3200</MsgClassID>
+    <Name>AUL - RFC Function Call - Failed RFC Call</Name>
+    <FullName>AUL - RFC Function Call - Failed RFC Call</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUL,RFC Function Call,Failed RFC Call,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>7</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.197+03:00</DateUpdated>
+    <SortOrder>22</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUL</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000036</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>2460</CommonEventID>
+    <CommonEventName>Account Locked</CommonEventName>
+    <MsgClassID>1220</MsgClassID>
+    <Name>AUM - Dialog Logon - User Locked Client Error Pass</Name>
+    <FullName>AUM - Dialog Logon - User Locked Client Error Pass</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUM,Dialog Logon,User Locked in Client After Erroneous Password Checks</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.2+03:00</DateUpdated>
+    <SortOrder>23</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUM</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000037</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>14503</CommonEventID>
+    <CommonEventName>Account Unlocked</CommonEventName>
+    <MsgClassID>1200</MsgClassID>
+    <Name>AUN - Dialog Logon - User Client Unlocked Inv Pass</Name>
+    <FullName>AUN - Dialog Logon - User Client Unlocked Inv Pass</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUN,Dialog Logon,User in Client Unlocked After Being Locked Due to Invalid Password Entered</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>3</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.2+03:00</DateUpdated>
+    <SortOrder>24</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUN</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000038</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1032132</CommonEventID>
+    <CommonEventName>User Logon Failure</CommonEventName>
+    <MsgClassID>1040</MsgClassID>
+    <Name>AUO - Dialog Logon Logon Failed</Name>
+    <FullName>AUO - Dialog Logon Logon Failed</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUO,Dialog Logon,Logon Failed</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.2+03:00</DateUpdated>
+    <SortOrder>25</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUO</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000039</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1026899</CommonEventID>
+    <CommonEventName>Begin Transaction</CommonEventName>
+    <MsgClassID>1999</MsgClassID>
+    <Name>AUP - Transaction Start - Transaction Locked</Name>
+    <FullName>AUP - Transaction Start - Transaction Locked</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.2+03:00</DateUpdated>
+    <SortOrder>26</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUP</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000040</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>14889</CommonEventID>
+    <CommonEventName>Process/Service Stopped</CommonEventName>
+    <MsgClassID>1400</MsgClassID>
+    <Name>AUQ - Transaction Start - Transaction Unlocked</Name>
+    <FullName>AUQ - Transaction Start - Transaction Unlocked</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.2+03:00</DateUpdated>
+    <SortOrder>27</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUQ</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000041</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>2435</CommonEventID>
+    <CommonEventName>User Account Created</CommonEventName>
+    <MsgClassID>1100</MsgClassID>
+    <Name>AUR - User Master Change - Created</Name>
+    <FullName>AUR - User Master Change - Created</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>3</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.203+03:00</DateUpdated>
+    <SortOrder>28</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUR</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000042</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>2434</CommonEventID>
+    <CommonEventName>User Account Deleted</CommonEventName>
+    <MsgClassID>1120</MsgClassID>
+    <Name>AUS - User Master Change - Deleted</Name>
+    <FullName>AUS - User Master Change - Deleted</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUS,User Master Change,Deleted</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.203+03:00</DateUpdated>
+    <SortOrder>29</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUS</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000043</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>2436</CommonEventID>
+    <CommonEventName>User Account Attribute Modified</CommonEventName>
+    <MsgClassID>1160</MsgClassID>
+    <Name>AUT - User Master Change - Changed</Name>
+    <FullName>AUT - User Master Change - Changed</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUT,User Master Change,Changed,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>1</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.203+03:00</DateUpdated>
+    <SortOrder>30</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUT</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000044</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1034164</CommonEventID>
+    <CommonEventName>Account Enabled</CommonEventName>
+    <MsgClassID>1200</MsgClassID>
+    <Name>AUU - User Master Change - Activated</Name>
+    <FullName>AUU - User Master Change - Activated</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUU,User Master Change,Activated,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>3</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.203+03:00</DateUpdated>
+    <SortOrder>31</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUU</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000045</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1035435</CommonEventID>
+    <CommonEventName>Signature Invalid</CommonEventName>
+    <MsgClassID>3200</MsgClassID>
+    <Name>AUV Other Events - Digital Signature Error</Name>
+    <FullName>AUV Other Events - Digital Signature Error</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUV,Other Events,Digital Signature Error,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>7</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.207+03:00</DateUpdated>
+    <SortOrder>32</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUV</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000046</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1030003</CommonEventID>
+    <CommonEventName>Get Report</CommonEventName>
+    <MsgClassID>1140</MsgClassID>
+    <Name>AUW - Report Start - ReportStarted</Name>
+    <FullName>AUW - Report Start - ReportStarted</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUW,Report Start,ReportStarted,Non-Critical,Low</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.207+03:00</DateUpdated>
+    <SortOrder>33</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUW</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000047</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1030472</CommonEventID>
+    <CommonEventName>Reporter Error</CommonEventName>
+    <MsgClassID>3200</MsgClassID>
+    <Name>AUX - Report Start - Start ReportFailed</Name>
+    <FullName>AUX - Report Start - Start ReportFailed</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUX,Report Start,Start ReportFailed,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>7</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.207+03:00</DateUpdated>
+    <SortOrder>34</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUX</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000048</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1029760</CommonEventID>
+    <CommonEventName>File Download</CommonEventName>
+    <MsgClassID>3400</MsgClassID>
+    <Name>AUY - Other Events - Download Bytes to File</Name>
+    <FullName>AUY - Other Events - Download Bytes to File</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUY,Other Events,Download Bytes to File,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.207+03:00</DateUpdated>
+    <SortOrder>35</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUY</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000049</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1034960</CommonEventID>
+    <CommonEventName>Signature Information</CommonEventName>
+    <MsgClassID>3400</MsgClassID>
+    <Name>AUZ - Other Events - Digital Signature</Name>
+    <FullName>AUZ - Other Events - Digital Signature</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AUZ,Other Events,Digital Signature,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.21+03:00</DateUpdated>
+    <SortOrder>36</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AUZ</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000050</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>14889</CommonEventID>
+    <CommonEventName>Process/Service Stopped</CommonEventName>
+    <MsgClassID>1400</MsgClassID>
+    <Name>AV1-Other Events-Audit event recording was stopped</Name>
+    <FullName>AV1-Other Events-Audit event recording was stopped</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AV1,Other Events,Audit event recording was stopped,Non-Critical,Low</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.21+03:00</DateUpdated>
+    <SortOrder>37</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AV1</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000051</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1026869</CommonEventID>
+    <CommonEventName>Database Table Access Failure</CommonEventName>
+    <MsgClassID>3200</MsgClassID>
+    <Name>AV2-Other Events-Error occurred when reading table</Name>
+    <FullName>AV2-Other Events-Error occurred when reading table</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AV2,Other Events,Error occurred when reading table key,Non-Critical,Low</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>7</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.21+03:00</DateUpdated>
+    <SortOrder>38</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AV2</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000052</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1034701</CommonEventID>
+    <CommonEventName>Log Is Nearly Full</CommonEventName>
+    <MsgClassID>3300</MsgClassID>
+    <Name>AV3-Other Events-Warning: Security Audit File Full</Name>
+    <FullName>AV3-Other Events-Warning: Security Audit File Full</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AV3,Other Events,Warning: Fill level of the Security Audit Log file exceeds percent,Non-Critical,Low</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>5</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.21+03:00</DateUpdated>
+    <SortOrder>39</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AV3</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000053</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1008716</CommonEventID>
+    <CommonEventName>File System Error While Writing To The Audit File</CommonEventName>
+    <MsgClassID>3200</MsgClassID>
+    <Name>AV4 - Other Events - Cannot open audit file</Name>
+    <FullName>AV4 - Other Events - Cannot open audit file</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AV4,Other Events,Cannot open audit file,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>7</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.21+03:00</DateUpdated>
+    <SortOrder>40</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AV4</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000054</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1008716</CommonEventID>
+    <CommonEventName>File System Error While Writing To The Audit File</CommonEventName>
+    <MsgClassID>3200</MsgClassID>
+    <Name>AV5 - Other Events - I/O error in audit file</Name>
+    <FullName>AV5 - Other Events - I/O error in audit file</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AV5,Other Events,I/O error in audit file,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>7</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.213+03:00</DateUpdated>
+    <SortOrder>41</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AV5</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000055</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1030129</CommonEventID>
+    <CommonEventName>Subsystem Initialization Complete</CommonEventName>
+    <MsgClassID>3400</MsgClassID>
+    <Name>AV6-Other Events-Initialization SCSA Sec Aud Comp</Name>
+    <FullName>AV6-Other Events-Initialization SCSA Sec Aud Comp</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AV6,Other Events,Initialization SCSA for Security Audit completed,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.213+03:00</DateUpdated>
+    <SortOrder>42</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AV6</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000056</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1019948</CommonEventID>
+    <CommonEventName>Audit Message</CommonEventName>
+    <MsgClassID>1999</MsgClassID>
+    <Name>AV7 - Other Events</Name>
+    <FullName>AV7 - Other Events</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AV7,Other Events,,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.213+03:00</DateUpdated>
+    <SortOrder>43</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AV7</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000057</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1023642</CommonEventID>
+    <CommonEventName>Shared Memory Log Access Failed</CommonEventName>
+    <MsgClassID>3400</MsgClassID>
+    <Name>AV8 - Invalid Version Audit Ctrl Blk in Shrd Mem</Name>
+    <FullName>AV8 - Invalid Version Audit Ctrl Blk in Shrd Mem</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AV8,Other Events,Invalid Version of Audit Control Block in Shared Memory,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.213+03:00</DateUpdated>
+    <SortOrder>44</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AV8</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000058</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1019753</CommonEventID>
+    <CommonEventName>General Audit Message</CommonEventName>
+    <MsgClassID>1999</MsgClassID>
+    <Name>AV9 - Other Events</Name>
+    <FullName>AV9 - Other Events</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AV9,Other Events,,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.217+03:00</DateUpdated>
+    <SortOrder>45</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AV9</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000059</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1019753</CommonEventID>
+    <CommonEventName>General Audit Message</CommonEventName>
+    <MsgClassID>1999</MsgClassID>
+    <Name>AVA - Other Events</Name>
+    <FullName>AVA - Other Events</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AVA,Other Events,,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.217+03:00</DateUpdated>
+    <SortOrder>46</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AVA</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000060</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1019753</CommonEventID>
+    <CommonEventName>General Audit Message</CommonEventName>
+    <MsgClassID>1999</MsgClassID>
+    <Name>AW1 - Other Events - Web Reporting</Name>
+    <FullName>AW1 - Other Events - Web Reporting</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>AW1,Other Events,Web Reporting,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.217+03:00</DateUpdated>
+    <SortOrder>47</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=AW1</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000061</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>19812</CommonEventID>
+    <CommonEventName>User Logon Failure : Bad Password</CommonEventName>
+    <MsgClassID>1040</MsgClassID>
+    <Name>BU1 - Password Failure - Bad Password</Name>
+    <FullName>BU1 - Password Failure - Bad Password</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.22+03:00</DateUpdated>
+    <SortOrder>48</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=BU1</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000062</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>2453</CommonEventID>
+    <CommonEventName>Password Modified</CommonEventName>
+    <MsgClassID>1160</MsgClassID>
+    <Name>BU2 - Password Change - Password Changed for User</Name>
+    <FullName>BU2 - Password Change - Password Changed for User</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>BU2,Password Change,Password Changed for User,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>1</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.22+03:00</DateUpdated>
+    <SortOrder>49</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=BU2</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000063</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1019753</CommonEventID>
+    <CommonEventName>General Audit Message</CommonEventName>
+    <MsgClassID>1999</MsgClassID>
+    <Name>BUZ - Other Events - In Program</Name>
+    <FullName>BUZ - Other Events - In Program</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>BUZ,Other Events,In Program,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.22+03:00</DateUpdated>
+    <SortOrder>50</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=BUZ</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000064</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1000714</CommonEventID>
+    <CommonEventName>Used For Debugging</CommonEventName>
+    <MsgClassID>3300</MsgClassID>
+    <Name>CUM - Other Events - Jump to ABAP Debugger</Name>
+    <FullName>CUM - Other Events - Jump to ABAP Debugger</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>CUM,Other Events,Jump to ABAP Debugger,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>5</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.22+03:00</DateUpdated>
+    <SortOrder>51</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=CUM</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000065</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1000000004</CommonEventID>
+    <CommonEventName>Field Contents Changed</CommonEventName>
+    <MsgClassID>3400</MsgClassID>
+    <Name>CUL - Other Events - Field contents changed</Name>
+    <FullName>CUL - Other Events - Field contents changed</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>CUL,Other Events,Field contents changed,Critical,High</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>9</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.22+03:00</DateUpdated>
+    <SortOrder>52</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=CUL</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000066</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1006485</CommonEventID>
+    <CommonEventName>User Debug</CommonEventName>
+    <MsgClassID>3400</MsgClassID>
+    <Name>CUY - Other Events - Debugging user</Name>
+    <FullName>CUY - Other Events - Debugging user</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>CUY,Other Events,Debugging user,Important,Medium</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.223+03:00</DateUpdated>
+    <SortOrder>53</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=CUY</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000067</MPERuleID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1019948</CommonEventID>
+    <CommonEventName>Audit Message</CommonEventName>
+    <MsgClassID>1999</MsgClassID>
+    <Name>UBM - Other Events - Other Events</Name>
+    <FullName>UBM - Other Events - Other Events</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc>UBM,Other Events,Other Events,Non-Critical,Low</ShortDesc>
+    <LongDesc />
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.223+03:00</DateUpdated>
+    <SortOrder>54</SortOrder>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>0</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>=UBM</MapVMID>
+    <MapSName>*</MapSName>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERuleRegex>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <RegexTagged>(2|q)(?&lt;vmid&gt;\w{3})(\d{14})0{1,2}\s*(?&lt;processid&gt;\d+)\s*(?&lt;session&gt;\d+)[A-Z].(?&lt;sname&gt;.{8})(?&lt;login&gt;.{12})(?&lt;object&gt;.{20})(?&lt;command&gt;.{40})(.{3}).((.*?)(?&lt;sname&gt;.{12}))$</RegexTagged>
+    <IgnoreCase>1</IgnoreCase>
+    <Multiline>0</Multiline>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2018-04-08T07:51:56.18+03:00</DateUpdated>
+    <PerfMonMode>1</PerfMonMode>
+    <VersionMajor>4</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+  </MPERuleRegex>
+  <MPERuleToMST>
+    <MsgSourceTypeID>1000000004</MsgSourceTypeID>
+    <MPERuleRegexID>1000000005</MPERuleRegexID>
+    <SortOrder>2</SortOrder>
+    <AutoSort>0</AutoSort>
+  </MPERuleToMST>
+  <CommonEvent>
+    <CommonEventID>2434</CommonEventID>
+    <MsgClassID>1120</MsgClassID>
+    <Name>User Account Deleted</Name>
+    <ShortDesc>A user account was deleted.</ShortDesc>
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>2435</CommonEventID>
+    <MsgClassID>1100</MsgClassID>
+    <Name>User Account Created</Name>
+    <ShortDesc>A user account was created.</ShortDesc>
+    <DefRiskRating>3</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>2436</CommonEventID>
+    <MsgClassID>1160</MsgClassID>
+    <Name>User Account Attribute Modified</Name>
+    <ShortDesc>A user accounts properties were modified.</ShortDesc>
+    <DefRiskRating>1</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>2453</CommonEventID>
+    <MsgClassID>1160</MsgClassID>
+    <Name>Password Modified</Name>
+    <ShortDesc />
+    <DefRiskRating>1</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>2460</CommonEventID>
+    <MsgClassID>1220</MsgClassID>
+    <Name>Account Locked</Name>
+    <ShortDesc>User account has been locked out due to exceeding the allowed number of failed logins within a period of time.</ShortDesc>
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>10404</CommonEventID>
+    <MsgClassID>1400</MsgClassID>
+    <Name>Process/Service Started</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>14503</CommonEventID>
+    <MsgClassID>1200</MsgClassID>
+    <Name>Account Unlocked</Name>
+    <ShortDesc />
+    <DefRiskRating>3</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>14889</CommonEventID>
+    <MsgClassID>1400</MsgClassID>
+    <Name>Process/Service Stopped</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>14892</CommonEventID>
+    <MsgClassID>3200</MsgClassID>
+    <Name>Function Call Failed</Name>
+    <ShortDesc />
+    <DefRiskRating>7</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>19812</CommonEventID>
+    <MsgClassID>1040</MsgClassID>
+    <Name>User Logon Failure : Bad Password</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>20871</CommonEventID>
+    <MsgClassID>3400</MsgClassID>
+    <Name>Set Client Active</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>22000</CommonEventID>
+    <MsgClassID>1160</MsgClassID>
+    <Name>Role Attribute Modified</Name>
+    <ShortDesc />
+    <DefRiskRating>1</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1000714</CommonEventID>
+    <MsgClassID>3300</MsgClassID>
+    <Name>Used For Debugging</Name>
+    <ShortDesc />
+    <DefRiskRating>5</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1006485</CommonEventID>
+    <MsgClassID>3400</MsgClassID>
+    <Name>User Debug</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1008716</CommonEventID>
+    <MsgClassID>3200</MsgClassID>
+    <Name>File System Error While Writing To The Audit File</Name>
+    <ShortDesc />
+    <DefRiskRating>7</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1019753</CommonEventID>
+    <MsgClassID>1999</MsgClassID>
+    <Name>General Audit Message</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1019948</CommonEventID>
+    <MsgClassID>1999</MsgClassID>
+    <Name>Audit Message</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1023642</CommonEventID>
+    <MsgClassID>3400</MsgClassID>
+    <Name>Shared Memory Log Access Failed</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1026869</CommonEventID>
+    <MsgClassID>3200</MsgClassID>
+    <Name>Database Table Access Failure</Name>
+    <ShortDesc />
+    <DefRiskRating>7</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1026899</CommonEventID>
+    <MsgClassID>1999</MsgClassID>
+    <Name>Begin Transaction</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1028208</CommonEventID>
+    <MsgClassID>1140</MsgClassID>
+    <Name>Function Call Completed</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1029199</CommonEventID>
+    <MsgClassID>3400</MsgClassID>
+    <Name>Transaction Request Started</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1029760</CommonEventID>
+    <MsgClassID>3400</MsgClassID>
+    <Name>File Download</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1030003</CommonEventID>
+    <MsgClassID>1140</MsgClassID>
+    <Name>Get Report</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1030129</CommonEventID>
+    <MsgClassID>3400</MsgClassID>
+    <Name>Subsystem Initialization Complete</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1030472</CommonEventID>
+    <MsgClassID>3200</MsgClassID>
+    <Name>Reporter Error</Name>
+    <ShortDesc />
+    <DefRiskRating>7</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1030645</CommonEventID>
+    <MsgClassID>1020</MsgClassID>
+    <Name>User Logon</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1030646</CommonEventID>
+    <MsgClassID>1020</MsgClassID>
+    <Name>User Logoff</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1032132</CommonEventID>
+    <MsgClassID>1040</MsgClassID>
+    <Name>User Logon Failure</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1034134</CommonEventID>
+    <MsgClassID>1500</MsgClassID>
+    <Name>Policy Modified : Auditing</Name>
+    <ShortDesc />
+    <DefRiskRating>2</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1034164</CommonEventID>
+    <MsgClassID>1200</MsgClassID>
+    <Name>Account Enabled</Name>
+    <ShortDesc />
+    <DefRiskRating>3</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1034701</CommonEventID>
+    <MsgClassID>3300</MsgClassID>
+    <Name>Log Is Nearly Full</Name>
+    <ShortDesc />
+    <DefRiskRating>5</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1034960</CommonEventID>
+    <MsgClassID>3400</MsgClassID>
+    <Name>Signature Information</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1034975</CommonEventID>
+    <MsgClassID>3300</MsgClassID>
+    <Name>Interface Inactive</Name>
+    <ShortDesc />
+    <DefRiskRating>5</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1035435</CommonEventID>
+    <MsgClassID>3200</MsgClassID>
+    <Name>Signature Invalid</Name>
+    <ShortDesc />
+    <DefRiskRating>7</DefRiskRating>
+    <DateUpdated>2018-03-20T07:19:37.617+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1000000003</CommonEventID>
+    <MsgClassID>3200</MsgClassID>
+    <Name>Start of Transaction Failed</Name>
+    <ShortDesc />
+    <DefRiskRating>9</DefRiskRating>
+    <DateUpdated>2018-04-04T15:55:29.01+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1000000004</CommonEventID>
+    <MsgClassID>3400</MsgClassID>
+    <Name>Field Contents Changed</Name>
+    <ShortDesc />
+    <DefRiskRating>9</DefRiskRating>
+    <DateUpdated>2018-04-08T07:35:33.767+03:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <MsgSourceType>
+    <MsgSourceTypeID>1000000004</MsgSourceTypeID>
+    <Name>Flat File - SAP Audit Log</Name>
+    <FullName>Flat File - SAP Audit Log</FullName>
+    <Abbreviation>SAP Audit Log</Abbreviation>
+    <ShortDesc />
+    <LongDesc />
+    <ParentMsgSourceTypeID>1000000000</ParentMsgSourceTypeID>
+    <IsMst>1</IsMst>
+    <DateUpdated>2018-04-04T13:44:07.333+03:00</DateUpdated>
+    <MsgSourceFormat>3</MsgSourceFormat>
+    <RecordStatus>1</RecordStatus>
+  </MsgSourceType>
+</RuleDataset>
