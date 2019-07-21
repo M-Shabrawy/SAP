@@ -3,9 +3,7 @@ import os
 from pathlib import Path
 from textwrap import wrap
 
-unicode = False
-utf16 = False
-utf16le = False
+encoded = "utf-16-le" #unicode, utf-16, utf-16-le, utf-16-be, utf-8
 
 SrcPath = "D:\\LogRhythm\\MPE\\SAP\\SIEM\\"
 
@@ -13,7 +11,7 @@ AUDFiles = Path(SrcPath).glob("*.AUD")
 
 for file in AUDFiles:
     #print(file)
-    sf = open(file,mode="r", encoding="utf-16-le")
+    sf = open(file,mode="r", encoding=encoded)
     df = open(str(file).split('.AUD')[0]+'.log',"w+")
     content = sf.read()
     for i in range(0,len(content),200):
