@@ -7,6 +7,7 @@ encoded = "utf-16-le" #unicode, utf-16, utf-16-le, utf-16-be, utf-8
 
 srcPath = "/home/oc" #Audit log files path
 #srcPath = "D:\\LogRhythm\\MPE\\SAP\\SIEM"
+
 audFile = srcPath + "/audit_" + datetime.datetime.now().strftime("%Y%m%d") + ".log"
 
 stateFile = srcPath + "/audit.stat"
