@@ -7,7 +7,9 @@ encoded = "utf-16-le" #unicode, utf-16, utf-16-le, utf-16-be, utf-8
 
 srcPath = "/home/oc" #Audit log files path
 
-audFile = srcPath + "/audit_" + datetime.datetime.now().strftime("%Y%m%d") + ".log"
+audFileName = "/audit_" + datetime.datetime.now().strftime("%Y%m%d") + ".log"
+
+audFile = srcPath + audFileName
 
 stateFile = srcPath + "/audit.stat"
 
@@ -17,12 +19,12 @@ if os.path.exists(audFile):
         sf = open(stateFile,"r+")
         stSize = int(sf.read().strip())
         if audSize > stSize:
-            af = open(AUDfile,mode="r", encoding=encoded)
-            lf = open(str(AUDfile).split('.log')[0]+'.aud',"w+")
+            af = open(audFile,mode="r", encoding=encoded)
+            lf = open(audFile+'.aud',"w+")
             content = af.read()
             for i in range(0,len(content),200):
                 lf.write(content[i:i+200]+"\n")
-            sf.write(stSize)
+            sf.write(str(audSize))
             sf.close()
             af.close()
             lf.close()
@@ -30,7 +32,7 @@ if os.path.exists(audFile):
     else:
         sf = open(stateFile,"w+")
         af = open(audFile,mode="r", encoding=encoded)
-        lf = open(str(audFile).split('.log')[0]+'.aud',"w+")
+        lf = open(audFile+'.aud',"w+")
         content = af.read()
         for i in range(0,len(content),200):
             lf.write(content[i:i+200]+"\n")
