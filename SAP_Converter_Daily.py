@@ -5,42 +5,52 @@ from textwrap import wrap
 
 encoded = "utf-16-le" #unicode, utf-16, utf-16-le, utf-16-be, utf-8
 
-srcPath = "/home/oc" #Audit log files path
+#Audit log files path
+srcPath = "/home/oc"
 
-audFileName = "/audit_" + datetime.datetime.now().strftime("%Y%m%d") + ".log"
+#Original SAP Genrated audit log file
+logFile = srcPath + "/audit_" + datetime.datetime.now().strftime("%Y%m%d") + ".log"
+#Converted audit fule
+audFile  = srcPath + "/audit_" + datetime.datetime.now().strftime("%Y%m%d") + ".aud"
+#State File
+stateFile = srcPath + "/audit.state"
 
-audFile = srcPath + audFileName
-
-stateFile = srcPath + "/audit.stat"
-
-if os.path.exists(audFile):
-    audSize = os.path.getsize(audFile)
+if os.path.exists(logFile):
+    logSize = os.path.getsize(logFile)
+    if not os.path.exists(audFile) and os.path.exists(stateFile):
+        os.remove(stateFile)
+        print ("Deleted old state file")
     if os.path.exists(stateFile):
         sf = open(stateFile,"r+")
+        print ("State file found")
         stSize = int(sf.read().strip())
-        if audSize > stSize:
-            af = open(audFile,mode="r", encoding=encoded)
-            lf = open(audFile+'.aud',"w+")
+        if logSize > stSize:
+            print ("log file changed")
+            af = open(logFile,mode="r", encoding=encoded)
+            lf = open(logFile+'.aud',"w+")
             content = af.read()
             for i in range(0,len(content),200):
                 lf.write(content[i:i+200]+"\n")
-            sf.write(str(audSize))
+            sf.write(str(logSize))
+            print ("File converted " + logFile)
             sf.close()
             af.close()
             lf.close()
         quit(0)
     else:
+        print ("new log file")
         sf = open(stateFile,"w+")
-        af = open(audFile,mode="r", encoding=encoded)
-        lf = open(audFile+'.aud',"w+")
+        af = open(logFile,mode="r", encoding=encoded)
+        lf = open(logFile+'.aud',"w+")
         content = af.read()
         for i in range(0,len(content),200):
             lf.write(content[i:i+200]+"\n")
-        sf.write(str(audSize))
+        sf.write(str(logSize))
         sf.close()
         af.close()
         lf.close()
         quit(0)
     
 else:
+    print ("Nothing to do")
     quit(0)

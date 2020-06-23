@@ -1,30 +1,50 @@
-﻿trap [Exception] 
+﻿param(
+    [Binary]$FormatIsUnicode = $false,
+    [String]$TempPath = "D:\SAP Logs",
+    [int]$CycleTime = -5
+)
+trap [Exception] 
 {
 	write-error $("Exception: " + $_)
 	exit 1
 }
 
-$FormatIsUnicode = $false
+$StatePath = "$TempPath\state"
+if(!(Test-Path -Path $StatePath)){
+    New-Item -Path $StatePath -ItemType Directory
+}
+$LogPaths = @(
+        "\\srv1\log",
+        "\\srv2\log",
+        "\\srv3\log"
+    )
 
-$LogPath = "T:\SAP\SAP Security Audit Log"
-$LogFolders = Get-ChildItem -Path $LogPath -Attributes Directory
+foreach($LogPath in $LogPaths){
+    $AuditFiles = Get-ChildItem "$LogPath\*.AUD"
+    Foreach ($file in $AuditFiles){
+        $StateFile = "$StatePath\$($file.BaseName).st"
+        $TempFile = "$TempPath\$($file.Name)"
+        $OutputFile = "$TempPath\$($file.BaseName).log"
+                
+        if(Test-Path -Path $StateFile){
+            $StateDate = [datetime]::ParseExact((Get-Content -Path $StateFile),"yyyy/MM/dd hh:mm:ss",$null)
+            if($file.LastWriteTime -gt $StateDate){
+                Copy-Item $file -Destination $TempFile
+                ($file.LastWriteTime).ToString() | sc $StateFile
+                (get-content $TempFile) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
+                Write-Host "File Converted "$file.Name
+                Remove-Item $Tempfile -Force
+                Write-Host "FilDeleted Temp File $TempFile"
+            }
+        }else{
+            Copy-Item $file -Destination $TempFile
+            ($file.LastWriteTime).ToString() | sc $StateFile
+            (get-content $TempFile) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
+            Write-Host "File Converted "$file.Name
+            Remove-Item $Tempfile -Force
+            Write-Host "FilDeleted Temp File $TempFile"
+        }
 
-
-foreach ($Folder in $LogFolders)
-{
-    $AUDFolder = Get-ChildItem -Path $Folder.FullName -Attributes Directory
-    $AUDFolder += '\'
-    $AuditFiles = Get-ChildItem "$AUDFolder\*.AUD"
-
-    Foreach ($file in $AuditFiles)
-    {
-        $TempFile = $AUDFolder + $file.BaseName + '.tmp'
-        $OutputFile = $AUDFolder + $file.BaseName + '.log'
-        get-content $file | out-file $TempFile -Force
-	    (get-content $Tempfile) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
-        Write-Host "File Converted "$file.Namfe
-              Remove-Item $Tempfile -Force       
-     }
-
+    }       
 }
 exit 0
