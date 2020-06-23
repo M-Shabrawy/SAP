@@ -9,10 +9,6 @@ trap [Exception]
 	exit 1
 }
 
-$StatePath = "$TempPath\state"
-if(!(Test-Path -Path $StatePath)){
-    New-Item -Path $StatePath -ItemType Directory
-}
 $LogPaths = @{
     "Srv1" = "\\srv1\log" ; 
     "Srv2"  = "\\srv2\log";
@@ -23,6 +19,10 @@ $LogPaths | % getEnumerator | %{
     $SrvTempPath = "$TempPath\$($_.key)"
     if(!(Test-Path -Path $SrvTempPath)){
         New-Item -Path $SrvTempPath -ItemType Directory
+    }
+    $StatePath = "$SrvTempPath\state"
+    if(!(Test-Path -Path $StatePath)){
+        New-Item -Path $StatePath -ItemType Directory
     }
     $AuditFiles = Get-ChildItem "$($_.Value)\*.AUD"
     Foreach ($file in $AuditFiles){
