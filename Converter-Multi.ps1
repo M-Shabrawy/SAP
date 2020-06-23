@@ -1,5 +1,5 @@
 ﻿param(
-    [Binary]$FormatIsUnicode = $false,
+    [Binary]$FormatIsUnicode = $true,
     [String]$TempPath = "D:\SAP Logs",
     [int]$CycleTime = -5
 )
@@ -35,7 +35,22 @@ $LogPaths | % getEnumerator | %{
             if($file.LastWriteTime -gt $StateDate){
                 Copy-Item $file -Destination $TempFile
                 ($file.LastWriteTime).ToString() | sc $StateFile
-                (get-content $TempFile) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
+                if($FormatIsUnicode -eq $true){
+                    (get-content $TempFile -Encoding Unicode) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
+                }else{
+                    (get-content $TempFile) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
+                }
+                Write-Host "File Converted "$file.Name
+                Remove-Item $Tempfile -Force
+                Write-Host "FilDeleted Temp File $TempFile"
+            }elif($file.LastWriteTime -lt $StateDate){
+                Copy-Item $file -Destination $TempFile
+                ($file.LastWriteTime).ToString() | sc $StateFile
+                if($FormatIsUnicode -eq $true){
+                    (get-content $TempFile -Encoding Unicode) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
+                }else{
+                    (get-content $TempFile) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
+                }
                 Write-Host "File Converted "$file.Name
                 Remove-Item $Tempfile -Force
                 Write-Host "FilDeleted Temp File $TempFile"
@@ -43,7 +58,11 @@ $LogPaths | % getEnumerator | %{
         }else{
             Copy-Item $file -Destination $TempFile
             ($file.LastWriteTime).ToString() | sc $StateFile
-            (get-content $TempFile) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
+            if($FormatIsUnicode -eq $true){
+                (get-content $TempFile -Encoding Unicode) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
+            }else{
+                (get-content $TempFile) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
+            }
             Write-Host "File Converted "$file.Name
             Remove-Item $Tempfile -Force
             Write-Host "FilDeleted Temp File $TempFile"
