@@ -1,72 +1,68 @@
 ﻿param(
     [Boolean]$FormatIsUnicode = $true,
-    [String]$TempPath = "D:\SAP Logs",
-    [int]$CycleTime = -5
+    [String]$BasePath = "D:\SAP Logs"
 )
+
 trap [Exception] 
 {
-	write-error $("Exception: " + $_)
-	exit 1
+       write-error $("Exception: " + $_)
+       exit 1
 }
 
 $LogPaths = @{
-    "Srv1" = "\\srv1\log" ; 
-    "Srv2"  = "\\srv2\log";
-    "Srv3" = "\\srv3\log"
+    "SRv1" = "\\Srv1\log" ; 
+    "Srv2" = "\\Srv2\log";
+    "SRv3" = "\\Srv3\log"
 }
 
-$LogPaths | % getEnumerator | %{
-    $SrvTempPath = "$TempPath\$($_.key)"
-    if(!(Test-Path -Path $SrvTempPath)){
-        New-Item -Path $SrvTempPath -ItemType Directory
+Function Convert-File{
+    param(
+        [String]$SrcPath,
+        $DstPath,
+        $OutFile,
+        $StatePath,
+        [Boolean]$FormatUnicode
+    )
+    $SrcFile = Get-ChildItem -Path $SrcPath
+    Copy-Item $SrcPath -Destination $DstPath
+    $SrcFile.LastWriteTime.Ticks | Set-Content $StatePath -NoNewline
+    if($FormatUnicode -eq $true){
+        (get-content $DstPath -Encoding Unicode) -replace ".{200}" , "$&`r`n" | Set-Content $OutputFile -Force
+    }else{
+        (get-content $DstPath) -replace ".{200}" , "$&`r`n" | Set-Content $OutFile -Force
     }
-    $StatePath = "$SrvTempPath\state"
+    Write-Host "File Converted "$SrcFile.Name
+    Remove-Item $DstPath -Force
+    Write-Host "FilDe Temp File $DstPath"
+}
+
+
+$LogPaths.getEnumerator() | %{
+    $SrvBasePath = "$BasePath\$($_.key)"
+    if(!(Test-Path -Path $SrvBasePath)){
+        New-Item -Path $SrvBasePath -ItemType Directory
+    }
+    $StatePath = "$SrvBasePath\state"
     if(!(Test-Path -Path $StatePath)){
         New-Item -Path $StatePath -ItemType Directory
     }
     $AuditFiles = Get-ChildItem "$($_.Value)\*.AUD"
     Foreach ($file in $AuditFiles){
         $StateFile = "$StatePath\$($file.BaseName).st"
-        $TempFile = "$SrvTempPath\$($file.Name)"
-        $OutputFile = "$SrvTempPath\$($file.BaseName).log"
+        $TempFile = "$SrvBasePath\$($file.Name)"
+        $OutputFile = "$SrvBasePath\$($file.BaseName).log"
                 
         if(Test-Path -Path $StateFile){
-            $StateDate = [datetime]::ParseExact((Get-Content -Path $StateFile),"yyyy/MM/dd hh:mm:ss",$null)
-            if($file.LastWriteTime -gt $StateDate){
-                Copy-Item $file -Destination $TempFile
-                ($file.LastWriteTime).ToString() | sc $StateFile
-                if($FormatIsUnicode -eq $true){
-                    (get-content $TempFile -Encoding Unicode) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
-                }else{
-                    (get-content $TempFile) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
-                }
-                Write-Host "File Converted "$file.Name
-                Remove-Item $Tempfile -Force
-                Write-Host "FilDeleted Temp File $TempFile"
-            }elif($file.LastWriteTime -lt $StateDate){
-                Copy-Item $file -Destination $TempFile
-                ($file.LastWriteTime).ToString() | sc $StateFile
-                if($FormatIsUnicode -eq $true){
-                    (get-content $TempFile -Encoding Unicode) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
-                }else{
-                    (get-content $TempFile) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
-                }
-                Write-Host "File Converted "$file.Name
-                Remove-Item $Tempfile -Force
-                Write-Host "FilDeleted Temp File $TempFile"
+            $StateTicks = [double](Get-Content -Path $StateFile)
+            
+            if($file.LastWriteTime.Ticks -ne $StateTicks){
+                Convert-File -SrcPath $file.FullName -DstPath $TempFile -OutFile $OutputFile -StatePath $StateFile -FormatUnicode $FormatIsUnicode
+            }else{
+                Write-Host "Skipping File $($file.Name)"
             }
         }else{
-            Copy-Item $file -Destination $TempFile
-            ($file.LastWriteTime).ToString() | sc $StateFile
-            if($FormatIsUnicode -eq $true){
-                (get-content $TempFile -Encoding Unicode) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
-            }else{
-                (get-content $TempFile) -replace ".{200}" , "$&`r`n" | sc $OutputFile -Force
-            }
-            Write-Host "File Converted "$file.Name
-            Remove-Item $Tempfile -Force
-            Write-Host "FilDeleted Temp File $TempFile"
+            Convert-File -SrcPath $file.FullName -DstPath $TempFile -OutFile $OutputFile -StatePath $StateFile -FormatUnicode $FormatIsUnicode
         }
     }       
 }
-exit 0
+exit 0 
