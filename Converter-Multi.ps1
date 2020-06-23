@@ -13,18 +13,22 @@ $StatePath = "$TempPath\state"
 if(!(Test-Path -Path $StatePath)){
     New-Item -Path $StatePath -ItemType Directory
 }
-$LogPaths = @(
-        "\\srv1\log",
-        "\\srv2\log",
-        "\\srv3\log"
-    )
+$LogPaths = @{
+    "Srv1" = "\\srv1\log" ; 
+    "Srv2"  = "\\srv2\log";
+    "Srv3" = "\\srv3\log"
+}
 
-foreach($LogPath in $LogPaths){
-    $AuditFiles = Get-ChildItem "$LogPath\*.AUD"
+$LogPaths | % getEnumerator | %{
+    $SrvTempPath = "$TempPath\$($_.key)"
+    if(!(Test-Path -Path $SrvTempPath)){
+        New-Item -Path $SrvTempPath -ItemType Directory
+    }
+    $AuditFiles = Get-ChildItem "$($_.Value)\*.AUD"
     Foreach ($file in $AuditFiles){
         $StateFile = "$StatePath\$($file.BaseName).st"
-        $TempFile = "$TempPath\$($file.Name)"
-        $OutputFile = "$TempPath\$($file.BaseName).log"
+        $TempFile = "$SrvTempPath\$($file.Name)"
+        $OutputFile = "$SrvTempPath\$($file.BaseName).log"
                 
         if(Test-Path -Path $StateFile){
             $StateDate = [datetime]::ParseExact((Get-Content -Path $StateFile),"yyyy/MM/dd hh:mm:ss",$null)
