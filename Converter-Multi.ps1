@@ -1,5 +1,5 @@
 ﻿param(
-    [Binary]$FormatIsUnicode = $true,
+    [Boolean]$FormatIsUnicode = $true,
     [String]$TempPath = "D:\SAP Logs",
     [int]$CycleTime = -5
 )
@@ -67,7 +67,6 @@ $LogPaths | % getEnumerator | %{
             Remove-Item $Tempfile -Force
             Write-Host "FilDeleted Temp File $TempFile"
         }
-
     }       
 }
 exit 0
