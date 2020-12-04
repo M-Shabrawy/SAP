@@ -7,7 +7,7 @@ encoded = "utf-16-le" #unicode, utf-16, utf-16-le, utf-16-be, utf-8
 
 SrcPath = "/usr/sap/dev/log" #Audit log files path
 
-AUDFiles = Path(SrcPath).glob("audit*") #Get all files with thename audit
+AUDFiles = Path(SrcPath).glob("audit*") #Get all files with the name audit
 
 for file in AUDFiles:
     sf = open(file,mode="r", encoding=encoded)

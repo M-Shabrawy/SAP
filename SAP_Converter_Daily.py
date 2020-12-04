@@ -1,6 +1,7 @@
 import io
 import os
 import datetime
+from pathlib import Path
 from textwrap import wrap
 
 encoded = "utf-16-le" #unicode, utf-16, utf-16-le, utf-16-be, utf-8
@@ -20,7 +21,7 @@ if os.path.exists(logFile):
     if not os.path.exists(audFile) and os.path.exists(stateFile):
         os.remove(stateFile)
         print ("Deleted old state file")
-    if os.path.exists(stateFile):
+    elif os.path.exists(stateFile):
         sf = open(stateFile,"r+")
         print ("State file found")
         stSize = int(sf.read().strip())
